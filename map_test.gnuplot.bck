@@ -1,0 +1,18 @@
+#!/usr/bin/gnuplot
+
+# set xlabel "X side"
+# set ylabel "Y side"
+set xrange[200:800]
+set yrange[800:200]
+set format x ""
+set format y ""
+set grid
+
+set key samplen 10 spacing 0.75 font ",24"
+set key off
+set terminal png size 2500,2500 background rgb '#asasas'
+set output 'map___DATEFILE___zoom.png'
+
+set label font ",38" "__DATE__"    at 200, 780   front nopoint tc rgb '#ffffff'
+set label font ",40" "Map by Hankier"    at 700, 780   front nopoint tc rgb '#ffffff'
+
